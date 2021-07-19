@@ -1,3 +1,11 @@
+/*
+  Configurações deste arquivo e outros relacionados as migrations feitos baseados nas seguintes referências
+
+  https://github.com/sequelize/cli/issues/861
+  https://gist.github.com/andrewmunro/030f0bf62453239c495b0347c8cd1247
+  https://gist.github.com/YavorK/816041feed5113986cfeb8fc304eb5df
+*/
+
 require('@babel/register')
 require('@babel/polyfill')
 
