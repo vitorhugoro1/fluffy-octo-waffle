@@ -1,0 +1,10 @@
+require('@babel/register')
+require('@babel/polyfill')
+
+const { resolve } = require('path')
+
+module.exports = {
+  config: resolve('infrastructure', 'config', 'config.cjs'),
+  'models-path': resolve('infrastructure', 'orm', 'sequelize'),
+  'migrations-path': resolve('infrastructure', 'orm', 'migrations')
+}

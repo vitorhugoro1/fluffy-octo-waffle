@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/vitorhugoro1/fluffy-octo-waffle#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/register": "^7.14.5",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
@@ -28,10 +31,13 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
     "nodemon": "^2.0.12",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "sequelize-cli": "^6.2.0"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
   }
 }
