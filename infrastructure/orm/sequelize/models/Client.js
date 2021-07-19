@@ -1,4 +1,6 @@
-export default (sequelize, DataTypes) => {
+import { DataTypes } from 'sequelize'
+
+export default function (sequelize) {
   sequelize.define('client', {
     id: {
       type: DataTypes.UUID,
@@ -11,7 +13,8 @@ export default (sequelize, DataTypes) => {
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      unique: true
     }
   })
 }

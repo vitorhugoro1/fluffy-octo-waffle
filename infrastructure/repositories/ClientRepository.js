@@ -5,4 +5,8 @@ export default class {
     this.db = sequelize
     this.model = this.db.model('Client')
   }
+
+  async findByPk (id) {
+    return this.model.findByPk(id)
+  }
 }

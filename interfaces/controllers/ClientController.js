@@ -1,4 +1,10 @@
+import ClientRepository from '../../infrastructure/repositories/ClientRepository.js'
+
 export default class ClientController {
+  constructor () {
+    this.repository = new ClientRepository()
+  }
+
   async listClients (request, response) {
     return response.json([
       {

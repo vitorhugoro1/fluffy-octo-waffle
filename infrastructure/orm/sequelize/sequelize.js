@@ -1,11 +1,16 @@
 'use strict'
 
 import { Sequelize } from 'sequelize'
-import { database } from '../../config/environment.js'
 
-const sequelize = new Sequelize(database.url)
+const models = [import('./models/Client.js'), import('./models/Wishlist.js')]
 
-sequelize.import('./models/Client')
-sequelize.import('./models/Wishlist')
+const sequelize = new Sequelize({
+  dialect: 'mysql',
+  username: 'root',
+  password: null,
+  database: 'fluffy'
+})
+
+models.forEach(model => {})
 
 export default sequelize
